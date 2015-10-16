@@ -13,13 +13,4 @@ feature 'endorsing reviews' do
     expect(page).to have_content('1 endorsement')
   end
 
-  scenario 'displays the correct number of endorsements' do
-    visit '/restaurants'
-    expect(page).to have_content('0 endorsements')
-  end
-
-
-
-
-
 end
