@@ -50,4 +50,5 @@ group :development, :test do
   gem 'capybara'
   gem 'rspec-collection_matchers'
   gem 'omniauth-facebook'
+  gem 'omniauth-github'
 end
