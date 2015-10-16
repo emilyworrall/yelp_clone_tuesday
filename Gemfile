@@ -8,6 +8,7 @@ gem 'haml-rails'
 gem 'haml'
 gem 'poltergeist'
 gem 'database_cleaner'
+gem 'paperclip'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
