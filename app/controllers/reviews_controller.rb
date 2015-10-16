@@ -31,5 +31,4 @@ class ReviewsController < ApplicationController
     flash[:notice] = 'Review deleted successfully'
     redirect_to '/restaurants'
   end
-
 end

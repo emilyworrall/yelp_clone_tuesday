@@ -1,0 +1,10 @@
+- if @restaurants.any?
+  - @restaurants.each do |restaurant|
+    = link_to @restaurants.name, restaurant_path(@restaurants)
+    - if current_user
+      - if (@restaurant.user_id == current_user.id)
+        = link_to "Edit #{@restaurants.name}", edit_restaurant_path(@restaurants)
+        = link_to "Delete #{@restaurants.name}", restaurant_path(@restaurants), method: :delete
+      = link_to "Review #{@restaurants.name}", new_restaurant_review_path(@restaurants)
+- else
+  %h1 No restaurants yet!
